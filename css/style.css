@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    color: rgb(242, 238, 238);
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    background: rgb(42, 72, 62);
+    background: radial-gradient(circle, rgba(42, 72, 62, 1) 13%, rgba(33, 37, 37, 1) 83%);
+}
+
+/* Line */
+hr {
+    width: 90%;
+}
+
+
+/* Header default */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-on-home {
+    margin-top: 30%;
+}
+
+/* Nav bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-nav ul {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav ul li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-on-home {
+    margin-bottom: 15%;
+}
+
+/* MAIN CONTENT */
+.main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* HOME PAGE */
+
+.riddle {
+    max-width: 100%;
+}
+
+.riddle img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+
+/* Other pages */
+.cat {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cat-header {
+    justify-content: flex-start;
+    column-gap: 1rem;
+    padding: 0 1.6rem;
+}
+
+.cat-content {
+    padding: 0.3rem;
+}
+
+.content-header {
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.content-header span {
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.4rem;
+}
+
+.img-container img {
+    max-width: 500px;
+    border-radius: 30px;
+    transition: all 0.4s ease-out;
+}
+
+.img-container figcaption {
+    text-align: center;
+}
+
+.img-container .game-img{
+    width: 260px;
+    border-radius: 50%;
+}
+
+.cat-header a{
+    border-bottom: 1px solid white;
+}
+
+.content-header a{
+    border-bottom: 2px solid white;
+}
+
+/* Animations and interactions */
+nav a{
+    border-bottom: 2px solid white;
+}
+
+nav a:hover {
+    border-bottom: 2px solid greenyellow;
+
+}
+
+.content-header a:hover{
+    color:rgb(129, 223, 191);
+}
+
+a:active {
+    color: rgb(121, 246, 116);
+}
+
+.cat-header a:hover{
+    border-bottom: 2px solid greenyellow;
+}
+
+/* .img-container img:hover {
+    width: calc(100% + 10%);
+    border-radius: 30px;
+} */
+
+.game-img:hover{
+    width: 270px; 
+    border-radius: 30px;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 660px) {
+    hr {
+        width: 75%;
+    }
+
+    .header-on-home {
+        margin-top: 0%;
+    }
+
+    .nav-on-home {
+        margin-bottom: 8%;
+    }
+
+    .cat {
+        max-width: 70%;
+    }
+
+    .cat-header {
+        justify-content: center;
+    }
+
+    .img-container img {
+        max-width: 700px;
+    }
+}
+
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
